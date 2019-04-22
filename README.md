@@ -13,11 +13,11 @@
 # 训练
 使用命令：
 ```c++
-python  train.py --save_weights_path=weights/ex1 
---train_images="data/dataset1/images_prepped_train/" 
---train_annotations="data/dataset1/annotations_prepped_train/" 
---val_images="data/dataset1/images_prepped_test/" 
---val_annotations="data/dataset1/annotations_prepped_test/" 
+python  train.py --save_weights_path=weights/ex1 \
+--train_images="data/dataset1/images_prepped_train/" \
+--train_annotations="data/dataset1/annotations_prepped_train/" \
+--val_images="data/dataset1/images_prepped_test/" \
+--val_annotations="data/dataset1/annotations_prepped_test/" \
 --n_classes=2 --input_height=512 --input_width=512
 ```
 训练完成后模型会保存在weights文件夹下面，我们可以利用保存的模型来进行测试工作。
